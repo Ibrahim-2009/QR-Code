@@ -1,5 +1,13 @@
+:root{
+    --slate-300: rgb(214, 226, 240);
+    --slate-500: rgb(104, 119, 141);
+    --slate-900: rgb(31, 50, 81);
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+}
+
 body{
-    background-color: rgb(213, 225, 239);
+    background-color: var(--slate-300);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,8 +22,6 @@ p{
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    width: 320px;
-    height: 499px;
     padding: 16px 16px 40px 16px;
     border-radius: 20px;
     box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.05);
@@ -29,18 +35,18 @@ p{
     margin-bottom: 16px;
     width: 256px;
     text-align: center;
-    color: rgb(31, 49, 79);
-    font-family: Outfit;
-    font-weight: 700;
+    color: var(--slate-900);
+    font-family: Outfit, Arial;
+    font-weight: var(--font-weight-bold);
     line-height: 120%;
     font-size: 22px;
 }
 .description{
     width: 256px;
     text-align: center;
-    color: rgb(104, 119, 141);
-    font-family: Outfit;
-    font-weight: 400;
+    color: var(--slate-500);
+    font-family: Outfit, Arial;
+    font-weight: var(--font-weight-regular);
     line-height: 140%;
     font-size: 15px;
 }
